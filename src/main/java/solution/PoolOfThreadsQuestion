@@ -1,0 +1,6 @@
+Briefly explain the benefit of using a pool of threads as opposed
+to creating/destroying threads on the fly.
+
+Solution:
+There is an overhead to creating and destroying threads; the pool will
+reuse the existing threads.

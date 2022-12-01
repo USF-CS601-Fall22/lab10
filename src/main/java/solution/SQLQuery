@@ -1,0 +1,7 @@
+Write an SQL query that shows the names of users who have more than one phone number.
+
+SELECT name
+FROM pusers INNER JOIN phones
+ON pusers.id = phones.userId
+GROUP BY userid
+HAVING COUNT(phones.userId) > 1;
